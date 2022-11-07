@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<title>UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources</title>
+<style>
+@import "./assets/asciidoctor.css"
+
+@charset "utf-8";
+html{font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a, blockquote {
+    color: #272727;
+}
+
+a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .x-comment-time:hover, #reply-title small a, .comment-reply-link:hover, .x-comment-author a:hover, .x-recent-posts a:hover .h-recent-posts {
+    color: rgb(40,158,197);
+    text-decoration: none;
+}
+
+table th, table td {
+    border-top: 1px solid #f2f2f2;
+}
+
+table {
+    border: 1px solid #f2f2f2;
+}
+
+
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://www.agi.org.uk/xmlrpc.php">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link media="all" href="https://www.agi.org.uk/wp-content/cache/autoptimize/css/autoptimize_b8039684156744de0d3df2a62f6432af.css" rel="stylesheet" /><title>1062 Gemini Datasets and Data Series - Association For Geographic Information</title>
+	<meta name="description" content="%" />
+	<link rel="canonical" href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="1062 Gemini Datasets and Data Series - Association For Geographic Information" />
+	<meta property="og:description" content="%" />
+	<meta property="og:url" content="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/" />
+	<meta property="og:site_name" content="Association For Geographic Information" />
+	<meta property="article:modified_time" content="2021-05-06T14:23:50+00:00" />
+	<meta name="author" content="Eileen Quick" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="115 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.agi.org.uk/#organization","name":"The Association for Geographic Information","url":"https://www.agi.org.uk/","sameAs":[],"logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.agi.org.uk/#/schema/logo/image/","url":"https://www.agi.org.uk/wp-content/uploads/2020/11/association-graphical-information-logo.jpg","contentUrl":"https://www.agi.org.uk/wp-content/uploads/2020/11/association-graphical-information-logo.jpg","width":443,"height":200,"caption":"The Association for Geographic Information"},"image":{"@id":"https://www.agi.org.uk/#/schema/logo/image/"}},{"@type":"WebSite","@id":"https://www.agi.org.uk/#website","url":"https://www.agi.org.uk/","name":"Association For Geographic Information","description":"The Association for Geographic Information","publisher":{"@id":"https://www.agi.org.uk/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.agi.org.uk/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/#webpage","url":"https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/","name":"1062 Gemini Datasets and Data Series - Association For Geographic Information","isPartOf":{"@id":"https://www.agi.org.uk/#website"},"datePublished":"2020-12-16T10:13:01+00:00","dateModified":"2021-05-06T14:23:50+00:00","description":"%","breadcrumb":{"@id":"https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/"]}]},{"@type":"BreadcrumbList","@id":"https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agi.org.uk/"},{"@type":"ListItem","position":2,"name":"Gemini","item":"https://www.agi.org.uk/gemini/"},{"@type":"ListItem","position":3,"name":"40-gemini","item":"https://www.agi.org.uk/gemini/40-gemini/"},{"@type":"ListItem","position":4,"name":"1062 Gemini Datasets and Data Series"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Association For Geographic Information &raquo; Feed" href="https://www.agi.org.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Association For Geographic Information &raquo; Comments Feed" href="https://www.agi.org.uk/comments/feed/" />
+
+
+<link rel='stylesheet' id='dashicons-css'  href='https://www.agi.org.uk/wp-includes/css/dashicons.min.css?ver=6.0.1' type='text/css' media='all' />
+
+
+
+
+
+
+
+<style id='cs-inline-css' type='text/css'>
+ a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-comment-time:hover,#reply-title small a,.comment-reply-link:hover,.x-comment-author a:hover,.x-recent-posts a:hover .h-recent-posts{color:rgb(40,158,197);}a:hover,#reply-title small a:hover{color:rgba(51,204,255,0.48);}.entry-title:before{color:rgb(0,153,187);}a.x-img-thumbnail:hover,li.bypostauthor > article.comment{border-color:rgb(40,158,197);}.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.h-comments-title small,.x-pagination a:hover,.woocommerce-pagination a:hover,.x-entry-share .x-share:hover,.entry-thumb,.widget_tag_cloud .tagcloud a:hover,.widget_product_tag_cloud .tagcloud a:hover,.x-highlight,.x-recent-posts .x-recent-posts-img:after,.x-portfolio-filters{background-color:rgb(40,158,197);}.x-portfolio-filters:hover{background-color:rgba(51,204,255,0.48);}.x-main{width:calc(80% - 3.20197%);}.x-sidebar{width:calc(100% - 3.20197% - 80%);}.h-landmark{font-weight:400;}.x-comment-author a{color:rgb(103,97,97);}.x-comment-author a,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar caption,.widget_calendar #wp-calendar th,.x-accordion-heading .x-accordion-toggle,.x-nav-tabs > li > a:hover,.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover{color:#272727;}.widget_calendar #wp-calendar th{border-bottom-color:#272727;}.x-pagination span.current,.woocommerce-pagination span[aria-current],.x-portfolio-filters-menu,.widget_tag_cloud .tagcloud a,.h-feature-headline span i,.widget_price_filter .ui-slider .ui-slider-handle{background-color:#272727;}@media (max-width:978.98px){}html{font-size:12px;}@media (min-width:500px){html{font-size:calc(12px + (20 - 12) * ((100vw - 500px) / (1000 - 500)));}}@media (min-width:1000px){html{font-size:20px;}}body{font-style:normal;font-weight:400;color:rgb(103,97,97);background-color:rgb(255,255,255);}.w-b{font-weight:400 !important;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;font-style:normal;font-weight:400;}h1,.h1{letter-spacing:-0.035em;}h2,.h2{letter-spacing:-0.035em;}h3,.h3{letter-spacing:-0.035em;}h4,.h4{letter-spacing:-0.035em;}h5,.h5{letter-spacing:-0.035em;}h6,.h6{letter-spacing:-0.035em;}.w-h{font-weight:400 !important;}.x-container.width{width:90%;}.x-container.max{max-width:1500px;}.x-bar-content.x-container.width{flex-basis:90%;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:978.98px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:1rem;}body,input,button,select,textarea{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:#272727;}.cfc-h-tx{color:#272727 !important;}.cfc-h-bd{border-color:#272727 !important;}.cfc-h-bg{background-color:#272727 !important;}.cfc-b-tx{color:rgb(103,97,97) !important;}.cfc-b-bd{border-color:rgb(103,97,97) !important;}.cfc-b-bg{background-color:rgb(103,97,97) !important;}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:rgb(255,255,255);background-color:rgb(0,153,187);margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);box-shadow:0 0.25em 0 0 rgba(51,204,255,0),0 4px 9px rgba(0,0,0,0.75);border-radius:0.25em;}.x-btn:hover,.button:hover,[type="submit"]:hover{color:rgb(0,153,187);border-color:rgb(0,153,187);background-color:rgb(255,255,255);margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);box-shadow:0 0.25em 0 0 rgb(0,153,187),0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 rgba(51,204,255,0),0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 rgb(0,153,187),0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;} @font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:900;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.ttf') format('truetype');}[data-x-fa-pro-icon]{font-family:"FontAwesomePro" !important;}[data-x-fa-pro-icon]:before{content:attr(data-x-fa-pro-icon);}[data-x-icon],[data-x-icon-o],[data-x-icon-l],[data-x-icon-s],[data-x-icon-b],[data-x-fa-pro-icon],[class*="cs-fa-"]{display:inline-block;font-style:normal;font-weight:400;text-decoration:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}[data-x-icon].left,[data-x-icon-o].left,[data-x-icon-l].left,[data-x-icon-s].left,[data-x-icon-b].left,[data-x-fa-pro-icon].left,[class*="cs-fa-"].left{margin-right:0.5em;}[data-x-icon].right,[data-x-icon-o].right,[data-x-icon-l].right,[data-x-icon-s].right,[data-x-icon-b].right,[data-x-fa-pro-icon].right,[class*="cs-fa-"].right{margin-left:0.5em;}[data-x-icon]:before,[data-x-icon-o]:before,[data-x-icon-l]:before,[data-x-icon-s]:before,[data-x-icon-b]:before,[data-x-fa-pro-icon]:before,[class*="cs-fa-"]:before{line-height:1;}@font-face{font-family:'FontAwesome';font-style:normal;font-weight:900;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-solid-900.ttf') format('truetype');}[data-x-icon],[data-x-icon-s],[data-x-icon][class*="cs-fa-"]{font-family:"FontAwesome" !important;font-weight:900;}[data-x-icon]:before,[data-x-icon][class*="cs-fa-"]:before{content:attr(data-x-icon);}[data-x-icon-s]:before{content:attr(data-x-icon-s);}@font-face{font-family:'FontAwesomeRegular';font-style:normal;font-weight:400;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.ttf') format('truetype');}@font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:400;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-regular-400.ttf') format('truetype');}[data-x-icon-o]{font-family:"FontAwesomeRegular" !important;}[data-x-icon-o]:before{content:attr(data-x-icon-o);}@font-face{font-family:'FontAwesomeLight';font-style:normal;font-weight:300;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.ttf') format('truetype');}@font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:300;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-light-300.ttf') format('truetype');}[data-x-icon-l]{font-family:"FontAwesomeLight" !important;font-weight:300;}[data-x-icon-l]:before{content:attr(data-x-icon-l);}@font-face{font-family:'FontAwesomeBrands';font-style:normal;font-weight:normal;font-display:block;src:url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-brands-400.woff2') format('woff2'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-brands-400.woff') format('woff'),url('https://www.agi.org.uk/wp-content/themes/pro/cornerstone/assets/fonts/fa-brands-400.ttf') format('truetype');}[data-x-icon-b]{font-family:"FontAwesomeBrands" !important;}[data-x-icon-b]:before{content:attr(data-x-icon-b);} .mwi-0.x-bar{height:7.43em;font-size:16px;background-color:#ffffff;box-shadow:0em 0.15em 2em rgba(0,0,0,0.15);}.mwi-0 .x-bar-content{height:7.43em;}.mwi-0.x-bar-outer-spacers:after,.mwi-0.x-bar-outer-spacers:before{flex-basis:2em;width:2em!important;height:2em;}.mwi-0.x-bar-space{font-size:16px;height:7.43em;}.mwi-1.x-bar{border:0;z-index:9999;}.mwi-1 .x-bar-content{flex-direction:row;justify-content:space-between;align-items:center;flex-grow:0;flex-shrink:1;flex-basis:100%;}.mwi-2.x-bar{height:3.84em;font-size:18px;background-color:#0099bb;box-shadow:-1em 0em -0.15em 0px #ffffff;}.mwi-2 .x-bar-content{height:3.84em;}.mwi-2.x-bar-outer-spacers:after,.mwi-2.x-bar-outer-spacers:before{flex-basis:0em;width:0em!important;height:0em;}.mwi-2.x-bar-space{font-size:18px;height:3.84em;}.mwi-3.x-bar-container{flex-direction:row;justify-content:flex-start;}.mwi-4.x-bar-container{align-items:center;}.mwi-5.x-bar-container{flex-grow:0.8;margin-top:0px;margin-right:50px;margin-bottom:0px;margin-left:0px;}.mwi-6.x-bar-container{flex-shrink:0;}.mwi-7.x-bar-container{flex-basis:auto;border:0;font-size:1em;z-index:1;}.mwi-8.x-bar-container{flex-grow:0;flex-shrink:1;}.mwi-a.x-bar-container{flex-direction:column;align-items:stretch;}.mwi-b.x-bar-container{justify-content:center;}.mwi-c.x-bar-container{margin-top:-2px;margin-right:-2px;margin-bottom:-2px;margin-left:-2px;text-align:right;}.mwi-d.x-bar-container{flex-wrap:wrap;}.mwi-e.x-bar-container{align-content:stretch;}.mwi-f.x-bar-container{flex-direction:column-reverse;align-content:center;flex-grow:1;background-color:rgba(184,184,184,0);}.mwi-g.x-image{font-size:1em;margin-top:4px;margin-right:0px;margin-bottom:0px;border:0;background-color:transparent;}.mwi-h.x-image{margin-left:-18px;}.mwi-i.x-image{margin-left:-44px;}.mwi-j.x-anchor {font-size:1em;}.mwi-j.x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;}.mwi-k.x-anchor {border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#ffffff;border-right-color:#ffffff;border-bottom-color:#ffffff;border-left-color:#ffffff;border-top-left-radius:0.35em;border-top-right-radius:0.35em;border-bottom-right-radius:0.35em;border-bottom-left-radius:0.35em;background-color:#0099bb;box-shadow:0em 0.611em 0.65em 0em rgba(0,0,0,0.25);}.mwi-k.x-anchor .x-anchor-content {padding-top:0.33199999999999996em;padding-bottom:0.33199999999999996em;}.mwi-k.x-anchor:hover,.mwi-k.x-anchor[class*="active"],[data-x-effect-provider*="colors"]:hover .mwi-k.x-anchor {border-top-color:#0099bb;border-right-color:#0099bb;border-bottom-color:#0099bb;border-left-color:#0099bb;background-color:#ffffff;}.mwi-k.x-anchor .x-anchor-text {margin-top:5px;margin-right:0px;margin-bottom:5px;margin-left:0px;}.mwi-k.x-anchor .x-anchor-text-primary {font-family:inherit;font-size:1em;font-style:normal;font-weight:400;line-height:1;color:#ffffff;}.mwi-k.x-anchor:hover .x-anchor-text-primary,.mwi-k.x-anchor[class*="active"] .x-anchor-text-primary,[data-x-effect-provider*="colors"]:hover .mwi-k.x-anchor .x-anchor-text-primary {color:#0099bb;}.mwi-l.x-anchor .x-anchor-content {padding-right:0.33199999999999996em;padding-left:0.33199999999999996em;}.mwi-m.x-anchor .x-anchor-content {padding-right:0.5em;padding-left:0.5em;}.mwi-n.x-anchor {width:2.75em;height:2.75em;border:0;border-top-left-radius:100em;border-top-right-radius:100em;border-bottom-right-radius:100em;border-bottom-left-radius:100em;background-color:rgba(255,255,255,1);box-shadow:0em 0.15em 0.65em 0em rgba(0,0,0,0.25);}.mwi-n.x-anchor .x-graphic {margin-top:5px;margin-right:5px;margin-bottom:5px;margin-left:5px;}.mwi-n.x-anchor .x-toggle {color:#0099bb;}.mwi-n.x-anchor:hover .x-toggle,.mwi-n.x-anchor[class*="active"] .x-toggle,[data-x-effect-provider*="colors"]:hover .mwi-n.x-anchor .x-toggle {color:#33ccff;}.mwi-n.x-anchor .x-toggle-burger {width:12em;margin-top:3.25em;margin-right:0;margin-bottom:3.25em;margin-left:0;font-size:0.1em;}.mwi-n.x-anchor .x-toggle-burger-bun-t {transform:translate3d(0,calc(3.25em * -1),0);}.mwi-n.x-anchor .x-toggle-burger-bun-b {transform:translate3d(0,3.25em,0);}.mwi-o.x-text{margin-top:0.9em;font-size:0.9em;}.mwi-p.x-text{margin-right:0em;margin-bottom:0em;margin-left:0em;border:0;font-family:inherit;font-style:normal;font-weight:400;line-height:1.4;letter-spacing:0em;text-transform:none;color:rgba(0,0,0,1);}.mwi-p.x-text > :first-child{margin-top:0;}.mwi-p.x-text > :last-child{margin-bottom:0;}.mwi-q.x-text{margin-top:0.7000000000003em;}.mwi-r.x-text{font-size:0.7em;}.mwi-s.x-text{margin-top:0.8em;}.mwi-t.x-text{font-size:.7em;}.mwi-u.x-text{margin-top:0.7em;}.mwi-v{font-size:16px;transition-duration:500ms;}.mwi-v .x-off-canvas-bg{background-color:#33ccff;transition-duration:500ms;transition-timing-function:cubic-bezier(0.400,0.000,0.200,1.000);}.mwi-v .x-off-canvas-close{width:calc(1em * 2);height:calc(1em * 2);font-size:1.5em;color:#ffffff;transition-duration:0.3s,500ms,500ms;transition-timing-function:ease-in-out,cubic-bezier(0.400,0.000,0.200,1.000),cubic-bezier(0.400,0.000,0.200,1.000);}.mwi-v .x-off-canvas-content{max-width:24em;padding-top:calc(1.5em * 2);padding-right:calc(1.5em * 2);padding-bottom:calc(1.5em * 2);padding-left:calc(1.5em * 2);border:0;background-color:#0099bb;box-shadow:0em 0em 2em 0em rgba(0,0,0,0.25);transition-duration:500ms;transition-timing-function:cubic-bezier(0.400,0.000,0.200,1.000);} .myo-0.x-bar{height:auto;}.myo-0 .x-bar-content{height:auto;}.myo-0.x-bar-outer-spacers:after,.myo-0.x-bar-outer-spacers:before{flex-basis:0.56rem;width:0.56rem!important;height:0.56rem;}.myo-1.x-bar{border:0;font-size:1rem;background-color:#0099bb;z-index:9998;}.myo-1 .x-bar-content{flex-direction:row;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;align-content:flex-end;flex-grow:0;flex-shrink:1;flex-basis:100%;}.myo-1.x-bar-space{font-size:1rem;}.myo-2.x-bar{height:49px;}.myo-2 .x-bar-content{height:49px;}.myo-2.x-bar-outer-spacers:after,.myo-2.x-bar-outer-spacers:before{flex-basis:1.08rem;width:1.08rem!important;height:1.08rem;}.myo-3.x-bar-container{flex-direction:row;justify-content:center;flex-grow:1;flex-shrink:0;border:0;font-size:1em;z-index:1;}.myo-4.x-bar-container{align-items:center;}.myo-5.x-bar-container{flex-wrap:wrap;align-content:center;flex-basis:100%;margin-top:0.9420000000000002rem;margin-right:0rem;margin-bottom:0.2280000000000002rem;margin-left:0rem;}.myo-6.x-bar-container{align-items:flex-end;flex-basis:auto;}.myo-8.x-bar-container{flex-basis:0%;}.myo-9.x-anchor {width:2.5em;min-width:2.5em;height:2.5em;min-height:2.5em;margin-top:0.25rem;margin-right:1rem;margin-bottom:0.25rem;margin-left:1rem;border-top-left-radius:100em;border-top-right-radius:100em;border-bottom-right-radius:100em;border-bottom-left-radius:100em;font-size:1rem;background-color:rgba(255,255,255,1);box-shadow:none;}.myo-9.x-anchor:hover,.myo-9.x-anchor[class*="active"],[data-x-effect-provider*="colors"]:hover .myo-9.x-anchor {box-shadow:0em 0em 0em 3px rgba(255,255,255,0.5);}.myo-9.x-anchor .x-graphic {margin-top:0px;margin-right:0px;margin-bottom:-1px;margin-left:0px;}.myo-9.x-anchor .x-graphic-icon {font-size:1.5em;width:1em;border:0;height:1em;line-height:1em;color:#0099bb;background-color:transparent;}.myo-9.x-anchor:hover .x-graphic-icon,.myo-9.x-anchor[class*="active"] .x-graphic-icon,[data-x-effect-provider*="colors"]:hover .myo-9.x-anchor .x-graphic-icon {color:#33ccff;}.myo-a.x-anchor {border:0;}.myo-a.x-anchor .x-anchor-content {flex-direction:row;align-items:center;}.myo-b.x-anchor .x-anchor-content {justify-content:center;}.myo-c.x-anchor {font-size:1em;background-color:transparent;}.myo-c.x-anchor .x-anchor-content {padding-top:0.75em;padding-right:0.75em;padding-bottom:0.75em;padding-left:0.75em;}.myo-c.x-anchor .x-anchor-text {margin-top:5px;margin-bottom:5px;margin-left:5px;}.myo-c.x-anchor .x-anchor-text-primary {font-family:inherit;font-style:normal;font-weight:400;line-height:1;}.myo-c.x-anchor:hover .x-anchor-text-primary,.myo-c.x-anchor[class*="active"] .x-anchor-text-primary,[data-x-effect-provider*="colors"]:hover .myo-c.x-anchor .x-anchor-text-primary {color:rgba(0,0,0,0.5);}.myo-c.x-anchor .x-anchor-sub-indicator {margin-top:5px;margin-right:5px;margin-bottom:5px;margin-left:5px;font-size:1em;color:rgba(0,0,0,1);}.myo-c.x-anchor:hover .x-anchor-sub-indicator,.myo-c.x-anchor[class*="active"] .x-anchor-sub-indicator,[data-x-effect-provider*="colors"]:hover .myo-c.x-anchor .x-anchor-sub-indicator {color:rgba(0,0,0,0.5);}.myo-d.x-anchor .x-anchor-text {margin-right:5px;}.myo-d.x-anchor .x-anchor-text-primary {font-size:0.787em;color:#ffffff;}.myo-e.x-anchor .x-anchor-content {justify-content:flex-start;}.myo-e.x-anchor .x-anchor-text {margin-right:auto;}.myo-e.x-anchor .x-anchor-text-primary {font-size:1em;color:rgba(0,0,0,1);}.myo-f{font-size:1.2em;flex-direction:row;justify-content:space-around;align-items:stretch;align-self:stretch;flex-grow:0;flex-shrink:0;flex-basis:auto;}.myo-f > li,.myo-f > li > a{flex-grow:0;flex-shrink:1;flex-basis:auto;}.myo-g .x-dropdown {width:14em;font-size:16px;border:0;background-color:#ffffff;box-shadow:0em 0.15em 2em 0em rgba(0,0,0,0.15);transition-duration:500ms,500ms,0s;transition-timing-function:cubic-bezier(0.400,0.000,0.200,1.000);}.myo-g selector:not(.x-active) {transition-delay:0s,0s,500ms;}.myo-h.x-text{border:0;font-family:"Source Sans Pro",sans-serif;font-size:0.9209999999999999rem;font-style:normal;font-weight:400;line-height:1.3;letter-spacing:0em;text-transform:none;color:#ffffff;}.myo-h.x-text > :first-child{margin-top:0;}.myo-h.x-text > :last-child{margin-bottom:0;} .m11c-0.x-section{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;border:0;padding-top:45px;padding-right:0px;padding-bottom:45px;padding-left:0px;z-index:auto;}.m11c-1.x-row{z-index:1;margin-right:auto;margin-left:auto;border:0;padding-top:1px;padding-right:1px;padding-bottom:1px;padding-left:1px;font-size:1em;}.m11c-1 > .x-row-inner{flex-direction:row;justify-content:flex-start;align-items:stretch;align-content:stretch;margin-top:calc(((1rem / 2) + 1px) * -1);margin-right:calc(((1rem / 2) + 1px) * -1);margin-bottom:calc(((1rem / 2) + 1px) * -1);margin-left:calc(((1rem / 2) + 1px) * -1);}.m11c-1 > .x-row-inner > *{flex-grow:1;margin-top:calc(1rem / 2);margin-bottom:calc(1rem / 2);margin-right:calc(1rem / 2);margin-left:calc(1rem / 2);}.m11c-1 > .x-row-inner > *:nth-child(1n - 0) {flex-basis:calc(100% - 1rem);}.m11c-2.x-col{z-index:auto;border:0;font-size:1em;}.m11c-3.x-text{border:0;font-family:inherit;font-size:1em;font-style:normal;font-weight:400;line-height:1.4;letter-spacing:0em;text-transform:none;color:rgba(0,0,0,1);}.m11c-3.x-text > :first-child{margin-top:0;}.m11c-3.x-text > :last-child{margin-bottom:0;}.gem .box{display:block;padding:9.5px;margin:20px 0 10px;font-size:16px;line-height:1.5;color:#333;word-break:break-all;word-wrap:break-word;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}.gem .spacer{padding-bottom:80px}.gem .box a{text-decoration:none;color:inherit;}.gem .readmore{padding-left:10px;}.gem .readmore a{cursor:pointer;}.gem .gemini-list{padding:10px 0;border-top:1px solid #7f7f7f;border-bottom:1px solid #7f7f7f;margin-bottom:20px;}.gem .gemini-item{border-bottom:1px solid #7f7f7f;padding-bottom:15px;margin-bottom:15px;}.gem .gemini-expander{display:none;}.gem .gemini-mono{font-size:12px;font-weight:bold;}.gem .gemini-xml{font-family:monospace;font-size:12px;color:red;}.gem pre{font-family:monospace;font-size:12px;color:red;overflow:auto;word-wrap:normal;white-space:pre;}.gem table{border:1px solid #ddd;border-collapse:collapse;margin:15px 0;}.gem table table{margin:0;}.gem th,.gem td{border:1px solid #ddd;padding:3px;text-align:left;vertical-align:top;font-size:12px;}.gem .thOther{background-color:#7f7f7f;color:white;}.gem .tbold{font-size:12px;font-weight:bold;background-color:#7f7f7f;color:white;}.gem .tgrey{font-size:12px;background-color:#cdcdcd;color:grey;}
+</style>
+<script type='text/javascript' src='https://www.agi.org.uk/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#0099bb","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#ffffff","button_1_button_hover":"#cccccc","button_1_link_colour":"#0099bb","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ffffff","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#ffffff","button_3_button_hover":"#cccccc","button_3_link_colour":"#0099bb","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#ffffff","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/www.agi.org.uk\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+
+<link rel="https://api.w.org/" href="https://www.agi.org.uk/wp-json/" /><link rel="alternate" type="application/json" href="https://www.agi.org.uk/wp-json/wp/v2/pages/1344" /><link rel='shortlink' href='https://www.agi.org.uk/?p=1344' />
+<link rel="alternate" type="application/json+oembed" href="https://www.agi.org.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.agi.org.uk%2Fgemini%2F40-gemini%2F1062-gemini-datasets-and-data-series%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.agi.org.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.agi.org.uk%2Fgemini%2F40-gemini%2F1062-gemini-datasets-and-data-series%2F&#038;format=xml" />
+        <style>
+            :root {
+                --tpg-primary-color: #0d6efd;
+                --tpg-secondary-color: #0654c4;
+                --tpg-primary-light: #c4d0ff
+            }
+
+                    </style>
+
+		<style id="ubermenu-custom-generated-css">
+/** Font Awesome 4 Compatibility **/
+.fa{font-style:normal;font-variant:normal;font-weight:normal;font-family:FontAwesome;}
+
+/** UberMenu Custom Menu Styles (Customizer) **/
+/* main */
+ .ubermenu-main .ubermenu-item.ubermenu-active > .ubermenu-submenu-drop.ubermenu-submenu-type-mega { overflow:visible; }
+ .ubermenu-main.ubermenu-mobile-modal.ubermenu-mobile-view { background:#0099bb; }
+ .ubermenu-main { background-color:#0099bb; background:-webkit-gradient(linear,left top,left bottom,from(#0099bb),to(#0099bb)); background:-webkit-linear-gradient(top,#0099bb,#0099bb); background:-moz-linear-gradient(top,#0099bb,#0099bb); background:-ms-linear-gradient(top,#0099bb,#0099bb); background:-o-linear-gradient(top,#0099bb,#0099bb); background:linear-gradient(top,#0099bb,#0099bb); }
+ .ubermenu-main .ubermenu-item-level-0 > .ubermenu-target { font-size:20px; text-transform:capitalize; color:#ffffff; }
+ .ubermenu-main .ubermenu-nav .ubermenu-item.ubermenu-item-level-0 > .ubermenu-target { font-weight:400; }
+ .ubermenu.ubermenu-main .ubermenu-item-level-0:hover > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-active > .ubermenu-target { color:#b8b8b8; }
+ .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-item > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-parent > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-ancestor > .ubermenu-target { color:#ffffff; }
+ .ubermenu-main .ubermenu-item.ubermenu-item-level-0 > .ubermenu-highlight { color:#33ccff; }
+ .ubermenu.ubermenu-main .ubermenu-item-level-0 { margin:5px; }
+ .ubermenu-main .ubermenu-submenu.ubermenu-submenu-drop { background-color:#0099bb; border:1px solid #b8b8b8; color:#ffffff; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-highlight { color:#33ccff; }
+ .ubermenu-main .ubermenu-item-normal > .ubermenu-target,.ubermenu-main .ubermenu-submenu .ubermenu-target,.ubermenu-main .ubermenu-submenu .ubermenu-nonlink,.ubermenu-main .ubermenu-submenu .ubermenu-widget,.ubermenu-main .ubermenu-submenu .ubermenu-custom-content-padded,.ubermenu-main .ubermenu-submenu .ubermenu-retractor,.ubermenu-main .ubermenu-submenu .ubermenu-colgroup .ubermenu-column,.ubermenu-main .ubermenu-submenu.ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target,.ubermenu-main .ubermenu-submenu.ubermenu-submenu-padded { padding:5px 20px; }
+ .ubermenu-main .ubermenu-grid-row { padding-right:5px 20px; }
+ .ubermenu-main .ubermenu-grid-row .ubermenu-target { padding-right:0; }
+ .ubermenu-main.ubermenu-sub-indicators .ubermenu-submenu :not(.ubermenu-tabs-layout-right) .ubermenu-has-submenu-drop > .ubermenu-target { padding-right:25px; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target, .ubermenu-main .ubermenu-tab > .ubermenu-target { font-size:18px; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { color:#ffffff; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target:hover { color:#ffffff; background-color:#33ccff; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header.ubermenu-current-menu-item > .ubermenu-target { color:#ffffff; }
+ .ubermenu-main .ubermenu-nav .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { font-weight:400; }
+ .ubermenu-main .ubermenu-item-normal > .ubermenu-target { color:#ffffff; font-size:16px; font-weight:400; }
+ .ubermenu.ubermenu-main .ubermenu-item-normal > .ubermenu-target:hover, .ubermenu.ubermenu-main .ubermenu-item-normal.ubermenu-active > .ubermenu-target { color:#ffffff; background-color:#33ccff; }
+ .ubermenu-main .ubermenu-item-normal.ubermenu-current-menu-item > .ubermenu-target { color:#ffffff; }
+ .ubermenu-main .ubermenu-item-level-0.ubermenu-has-submenu-drop > .ubermenu-target > .ubermenu-sub-indicator { color:#ffffff; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-has-submenu-drop > .ubermenu-target > .ubermenu-sub-indicator { color:#ffffff; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-divider > hr { border-top-color:#b8b8b8; }
+ .ubermenu-responsive-toggle.ubermenu-responsive-toggle-main { font-size:16px; font-weight:bold; background:#0099bb; color:#ffffff; }
+ .ubermenu-responsive-toggle.ubermenu-responsive-toggle-main:hover { background:#33ccff; color:#ffffff; }
+
+
+/** UberMenu Custom Menu Item Styles (Menu Item Settings) **/
+/* 81 */     .ubermenu .ubermenu-item.ubermenu-item-81.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-81 > .ubermenu-target:hover, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-81.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-81 > .ubermenu-target:hover { background:#0099bb; }
+/* 160 */    .ubermenu .ubermenu-item.ubermenu-item-160 > .ubermenu-target { background:#b8b8b8; }
+/* 163 */    .ubermenu .ubermenu-item.ubermenu-item-163 > .ubermenu-target { background:#b8b8b8; }
+/* 158 */    .ubermenu .ubermenu-item.ubermenu-item-158 > .ubermenu-target { background:#b8b8b8; }
+/* 1046 */   .ubermenu .ubermenu-item.ubermenu-item-1046 > .ubermenu-target { color:#ffffff; }
+/* 1045 */   .ubermenu .ubermenu-item.ubermenu-item-1045 > .ubermenu-target { color:#ffffff; }
+
+/* Status: Loaded from Transient */
+
+</style><meta name="generator" content="Powered by Slider Revolution 6.5.25 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://www.agi.org.uk/wp-content/uploads/2022/03/cropped-Favicon-002-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.agi.org.uk/wp-content/uploads/2022/03/cropped-Favicon-002-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.agi.org.uk/wp-content/uploads/2022/03/cropped-Favicon-002-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.agi.org.uk/wp-content/uploads/2022/03/cropped-Favicon-002-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style type="text/css" id="wp-custom-css">
+			h1, h1 {font-size: 40px; }
+
+h2, h2 {font-size: 30px; }
+
+h3, h3 {font-size: 25px; }
+
+h4, h4 {font-size: 20px; }
+
+h5, h5 {font-size: 14px; }
+.x-sidebar {
+    border-left: 1px solid #33ccff !important;
+    padding: 20px !important;
+}
+body .x-flexslider {
+      background-color:transparent;
+}
+
+.flex-control-nav:not(.flex-control-thumbs) {
+    top: auto;
+  	bottom: 1;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.flex-control-nav a {
+    background-color: #ccc;
+    border-radius: 100%;
+}
+.x-flexslider-shortcode-container .flex-control-nav:not(.flex-control-thumbs) {
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: 0;
+    margin-left: -36px;
+}
+
+.x-flexslider-shortcode-container .flex-control-nav a {
+    background-color: transparent;
+    border: solid 1px #000;
+}
+
+.x-flexslider-shortcode-container .flex-control-nav a.flex-active {
+    background-color: #0099bb;
+}
+.x-flexslider .x-slides img {
+    width:  auto;
+}
+.flex-direction-nav {
+    position: absolute;
+    right: 105px;
+    bottom: 45px;
+}
+@media  (max-width: 980px)
+
+{
+    a[href$='#ubermenu-row']
+    {
+        display:none;
+    }
+}
+.flexmethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.x-container:before {
+  content: normal;
+}
+.single-post .entry-featured {
+    width: 30%;
+}		</style>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-188338841-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<link rel="stylesheet" href="https://www.agi.org.uk/wp-content/uploads/omgf/omgf-stylesheet-104/omgf-stylesheet-104.css?ver=1648582986" type="text/css" media="all" data-x-google-fonts/>
+</head>
+<body class="article">
+
+    <div class="x-bar x-bar-top x-bar-h x-bar-relative x-bar-outer-spacers e1170-1 mwi-0 mwi-1" data-x-bar="{&quot;id&quot;:&quot;e1170-1&quot;,&quot;region&quot;:&quot;top&quot;,&quot;height&quot;:&quot;7.43em&quot;}">
+<div class="e1170-1 x-bar-content">
+<div class="x-bar-container e1170-2 mwi-3 mwi-4 mwi-5 mwi-6 mwi-7  x-hide-md x-hide-sm x-hide-xs">
+
+<a class="x-image e1170-3 mwi-g mwi-h  x-hide-sm x-hide-xs" href="https://www.agi.org.uk/">
+<img src="https://www.agi.org.uk/wp-content/uploads/2020/11/association-graphical-information-logo.jpg" width="332" height="150" alt="AGI The Association for Geographic Information" loading="lazy">
+</a>
+</div>
+<div class="x-bar-container e1170-8 mwi-7 mwi-8 mwi-a mwi-b mwi-c">
+<a class="x-anchor x-anchor-button e1170-9 mwi-j mwi-k mwi-l  x-hide-xs" tabindex="0" href="https://www.agi.org.uk/membership-levels/">
+<div class="x-anchor-content">
+<div class="x-anchor-text">
+<span class="x-anchor-text-primary">
+Join Us</span>
+</div>
+</div>
+</a>
+<div class="x-text e1170-11 mwi-o mwi-p  x-hide-md x-hide-sm x-hide-xs">
+<i class="fa fa-phone" aria-hidden="true">
+</i>
+ +44(0)1489 668 340</div>
+</div>
+<div class="x-bar-container e1170-14 mwi-7 mwi-8 mwi-9 mwi-a mwi-b mwi-d mwi-e  x-hide-xs">
+<a class="x-anchor x-anchor-button e1170-15 mwi-j mwi-k mwi-m  x-hide-xs" tabindex="0" href="https://members.agi.org.uk/login">
+<div class="x-anchor-content">
+<div class="x-anchor-text">
+<span class="x-anchor-text-primary">
+Login</span>
+</div>
+</div>
+</a>
+<div class="x-text e1170-16 mwi-o mwi-p  x-hide-md x-hide-sm x-hide-xs">
+<i class="fa fa-envelope" aria-hidden="true">
+</i>
+ <a href="mailto:info@agi.org.uk">
+info@agi.org.uk</a>
+</div>
+</div>
+</div>
+</div>
+<div class="x-bar x-bar-top x-bar-h x-bar-relative x-bar-is-sticky x-bar-outer-spacers e1170-19 mwi-1 mwi-2" data-x-bar="{&quot;id&quot;:&quot;e1170-19&quot;,&quot;region&quot;:&quot;top&quot;,&quot;height&quot;:&quot;3.84em&quot;,&quot;triggerOffset&quot;:&quot;0&quot;,&quot;shrink&quot;:&quot;1&quot;}">
+<div class="e1170-19 x-bar-content">
+<div class="x-bar-container e1170-20 mwi-4 mwi-6 mwi-7 mwi-9 mwi-b mwi-d mwi-f">
+<a class="x-anchor x-anchor-toggle has-graphic e1170-21 mwi-j mwi-n  x-hide-lg x-hide-xl" tabindex="0" data-x-toggle="1" data-x-toggleable="e1170-21" data-x-toggle-overlay="1" aria-controls="e1170-21-off-canvas" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Off Canvas Content">
+<div class="x-anchor-content">
+<span class="x-graphic" aria-hidden="true">
+
+<span class="x-toggle x-toggle-burger x-graphic-child x-graphic-toggle" aria-hidden="true">
+
+
+
+    <span class="x-toggle-burger-bun-t" data-x-toggle-anim="x-bun-t-1">
+</span>
+
+    <span class="x-toggle-burger-patty" data-x-toggle-anim="x-patty-1">
+</span>
+
+    <span class="x-toggle-burger-bun-b" data-x-toggle-anim="x-bun-b-1">
+</span>
+
+
+
+</span>
+</span>
+</div>
+</a>
+<div class="x-content-area e1170-22 mwi-w  x-hide-md x-hide-sm x-hide-xs">
+
+<!-- UberMenu [Configuration:main] [Theme Loc:] [Integration:api] -->
+
+<!-- [UberMenu Responsive Toggle Disabled] -->
+ <nav id="ubermenu-main-2" class="ubermenu ubermenu-nojs ubermenu-main ubermenu-menu-2 ubermenu-responsive ubermenu-responsive-single-column ubermenu-responsive-single-column-subs ubermenu-responsive-default ubermenu-responsive-nocollapse ubermenu-horizontal ubermenu-transition-slide ubermenu-trigger-hover_intent ubermenu-skin-vanilla  ubermenu-bar-align-full ubermenu-items-align-center ubermenu-sub-indicators ubermenu-sub-indicators-align-text ubermenu-retractors-responsive ubermenu-submenu-indicator-closes">
+<ul id="ubermenu-nav-main-2" class="ubermenu-nav" data-title="Main Menu">
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-home ubermenu-item-853 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Home</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-has-children ubermenu-advanced-sub ubermenu-item-116 ubermenu-item-level-0 ubermenu-column ubermenu-column-natural ubermenu-has-submenu-drop ubermenu-has-submenu-mega" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="#" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+About Us</span>
+<i class='ubermenu-sub-indicator fas fa-angle-down'>
+</i>
+</a>
+<div  class="ubermenu-submenu ubermenu-submenu-id-116 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width ubermenu-submenu-content-align-center ubermenu-submenu-retractor-top ubermenu-submenu-retractor-top-2"  >
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+<div class="ubermenu-retractor ubermenu-retractor-desktop">
+<i class="fas fa-times">
+</i>
+</div>
+<ul class="ubermenu-row ubermenu-row-id-116_auto_1 ubermenu-autoclear ">
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-460 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/mission-and-role/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Mission and Role</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-461 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/council-members/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Council Members</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-463 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/our-partners/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Our Partners</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1197 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/contact-us/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Contact us</span>
+</a>
+</li>
+</ul>
+<ul class="ubermenu-row ubermenu-row-id-1632 ubermenu-autoclear ">
+</ul>
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+</div>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-has-children ubermenu-advanced-sub ubermenu-item-10 ubermenu-item-level-0 ubermenu-column ubermenu-column-natural ubermenu-has-submenu-drop ubermenu-has-submenu-mega" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="#" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Groups</span>
+<i class='ubermenu-sub-indicator fas fa-angle-down'>
+</i>
+</a>
+<div  class="ubermenu-submenu ubermenu-submenu-id-10 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width ubermenu-submenu-content-align-center ubermenu-submenu-retractor-top ubermenu-submenu-retractor-top-2"  >
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+<div class="ubermenu-retractor ubermenu-retractor-desktop">
+<i class="fas fa-times">
+</i>
+</div>
+<ul class="ubermenu-row ubermenu-row-id-10_auto_1 ubermenu-autoclear ">
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-454 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="https://www.agi.org.uk/agi-cymru/">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI Cymru</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-455 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="https://www.agi.org.uk/agi-northern-ireland/">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI Northern Ireland</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-456 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="https://www.agi.org.uk/agi-scotland/">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI Scotland</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-459 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="https://www.agi.org.uk/agi-early-careers-network/">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI Early Careers Network</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-910 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="https://www.agi.org.uk/agi-uk-gemini/">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI GEMINI Working Group</span>
+</a>
+</li>
+</ul>
+<ul class="ubermenu-row ubermenu-row-id-1584 ubermenu-autoclear ">
+</ul>
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+</div>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-has-children ubermenu-item-1262 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto ubermenu-has-submenu-drop ubermenu-has-submenu-mega" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="#" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Resources</span>
+<i class='ubermenu-sub-indicator fas fa-angle-down'>
+</i>
+</a>
+<ul  class="ubermenu-submenu ubermenu-submenu-id-1262 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width ubermenu-submenu-content-align-center ubermenu-submenu-retractor-top ubermenu-submenu-retractor-top-2"  >
+<li class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</li>
+<li class="ubermenu-retractor ubermenu-retractor-desktop">
+<i class="fas fa-times">
+</i>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1901 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/news/">
+<span class="ubermenu-target-title ubermenu-target-text">
+News &#038; Insights</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-has-children ubermenu-item-1046 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto ubermenu-has-submenu-stack" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/uk-gemini/">
+<span class="ubermenu-target-title ubermenu-target-text">
+UK GEMINI</span>
+</a>
+<ul  class="ubermenu-submenu ubermenu-submenu-id-1046 ubermenu-submenu-type-auto ubermenu-submenu-type-stack"  >
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1043 ubermenu-item-auto ubermenu-item-normal ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/why-uk-gemini/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Why UK GEMINI</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1045 ubermenu-item-auto ubermenu-item-normal ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/bs-7666-guidelines/">
+<span class="ubermenu-target-title ubermenu-target-text">
+BS 7666 Guidelines</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-has-children ubermenu-item-1542 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto ubermenu-has-submenu-stack" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="#">
+<span class="ubermenu-target-title ubermenu-target-text">
+AGI</span>
+</a>
+<ul  class="ubermenu-submenu ubermenu-submenu-id-1542 ubermenu-submenu-type-auto ubermenu-submenu-type-stack"  >
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1553 ubermenu-item-auto ubermenu-item-normal ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/foresight-report/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Foresight Report</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1622 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/case-studies/">
+<span class="ubermenu-target-title ubermenu-target-text">
+Case Studies</span>
+</a>
+</li>
+<li class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</li>
+</ul>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-393 ubermenu-item-level-0 ubermenu-column ubermenu-column-natural" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/membership-levels/" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Membership</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-has-children ubermenu-advanced-sub ubermenu-item-293 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto ubermenu-has-submenu-drop ubermenu-has-submenu-mega" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-content-align-left ubermenu-item-layout-text_only" href="#" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Events</span>
+<i class='ubermenu-sub-indicator fas fa-angle-down'>
+</i>
+</a>
+<div  class="ubermenu-submenu ubermenu-submenu-id-293 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width ubermenu-submenu-content-align-center ubermenu-submenu-retractor-top ubermenu-submenu-retractor-top-2"  >
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+<div class="ubermenu-retractor ubermenu-retractor-desktop">
+<i class="fas fa-times">
+</i>
+</div>
+<ul class="ubermenu-row ubermenu-row-id-293_auto_1 ubermenu-autoclear ">
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-426 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/upcoming-events/">
+<span class="ubermenu-target-title ubermenu-target-text">
+All Upcoming Events</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-1725 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/geocom/">
+<span class="ubermenu-target-title ubermenu-target-text">
+GeoCom</span>
+</a>
+</li>
+<li class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-2799 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-2 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://www.agi.org.uk/geocymru/">
+<span class="ubermenu-target-title ubermenu-target-text">
+GeoCymru</span>
+</a>
+</li>
+</ul>
+<ul class="ubermenu-row ubermenu-row-id-1585 ubermenu-autoclear ">
+</ul>
+<div class="ubermenu-retractor ubermenu-retractor-mobile">
+<i class="fas fa-times">
+</i>
+ Close</div>
+</div>
+</li>
+<li class="ubermenu-item ubermenu-item-type-custom ubermenu-item-object-custom ubermenu-item-1242 ubermenu-item-level-0 ubermenu-column ubermenu-column-auto" >
+<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only" href="https://members.agi.org.uk/login/" tabindex="0">
+<span class="ubermenu-target-title ubermenu-target-text">
+Login</span>
+</a>
+</li>
+</ul>
+</nav>
+
+<!-- End UberMenu -->
+
+</div>
+</div>
+</div>
+</div>
+<div class="e1170-19 mwi-1 mwi-2 x-bar-space x-bar-space-top x-bar-space-h" style="display: none;">
+</div>
+
+
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_uk_gemini_v2_2_specification_for_discovery_metadata_for_geospatial_resources">UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#Intro">Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#scope">1.
+Scope</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#normative_ref">2.
+Normative Reference</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#terms">3.
+Terms and Definitions</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#requirements">4.
+Requirements</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.1">4.1
+Datasets and dataset series</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.2">4.2
+Services</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.3">4.3
+Element details</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#extended">5.
+Extended metadata</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#5.1">5.1
+Additional metadata elements</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#5.2">5.2
+Extension of code lists</a></p>
+</div>
+<div class="sect2">
+<h3 id="_foreword"><a class="anchor" href="#_foreword"></a><a class="link" href="#_foreword">Foreword</a></h3>
+<div class="paragraph">
+<p>UK GEMINI was originally produced in 2004 by collaboration between the
+Association for Geographic Information (AGI), the (then) e-Government
+Unit (eGU) and the UK Data Archive. It was designed for use in the UK
+geospatial metadata service&#160; <em>gigateway</em>&#160;to replace the NGDF (National
+Geospatial Data Framework) metadata standard with metadata that is
+compatible with ISO 19115.</p>
+</div>
+<div class="paragraph">
+<p>In 2006, a Working Group was set up under the auspices of The
+Association for Geographic Information (AGI) to revise UK GEMINI. It
+contained representatives from the following organisations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AGI</p>
+</li>
+<li>
+<p>British Geological Survey</p>
+</li>
+<li>
+<p>Cabinet Office</p>
+</li>
+<li>
+<p>EDINA</p>
+</li>
+<li>
+<p>Environment Agency</p>
+</li>
+<li>
+<p>gigateway</p>
+</li>
+<li>
+<p>Natural England</p>
+</li>
+<li>
+<p>Ordnance Survey</p>
+</li>
+<li>
+<p>UK Hydrographic Office</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The principles of the revision were as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>to meet the requirements for metadata of the EU INSPIRE Directive –
+where an element is mandatory in the INSPIRE Implementing Rules, it is
+included in UK GEMINI with the same domain and occurrence, but the
+element name and description may be different in order to maintain
+compatibility with the previous version of GEMINI and to provide greater
+clarity;</p>
+</li>
+<li>
+<p>to be conformant with the International Standard ISO 19115 Geographic
+information – Metadata, within the limits of the requirements of
+INSPIRE;</p>
+</li>
+<li>
+<p>to be consistent with the GEMINI 1.0 where possible;</p>
+</li>
+<li>
+<p>to be compatible with the e-Government Metadata Standard where
+possible;</p>
+</li>
+<li>
+<p>to correct errors in GEMINI 1.0 and take into account experience of
+its use.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Further changes were made in version 2.1 in 2010, in the light of
+experience of use of UK GEMINI2, and changes to the INSPIRE Technical
+Guidelines.</p>
+</div>
+<div class="paragraph">
+<p>UK GEMINI 2.2 included further changes requested by the UK Location
+Programme Metadata Working Group.</p>
+</div>
+<div class="paragraph">
+<p>In 2018, changes were made that had been requested by various user
+communities as well as the revised metadata technical guidance from
+INSPIRE. &#160;This updated version is known as UK GEMINI2.3.</p>
+</div>
+<div class="paragraph">
+<p>Further details of all these changes are
+given&#160;<a href="https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>A set of guidelines for metadata for geospatial datasets was originally
+produced in 2006. The Guidelines were in three parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Part 1 Introduction to Metadata</p>
+</li>
+<li>
+<p>Part 2 Creating metadata using UK GEMINI</p>
+</li>
+<li>
+<p>Part 3 Metadata quality</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These Guidelines were intended for general use in the UK geographic
+information environment, and particularly in support of the national
+geospatial metadata service,&#160;_gigateway_. They were developed within the
+context of a national geospatial metadata service, and UK GEMINI. These
+Guidelines have now been updated to incorporate the changes made in the
+revised version of UK GEMINI, 2.3, and their content made available on
+the AGI
+website:&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Introduction
+to Metadata</a>; parts
+of&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2">Creating
+metadata using GEMINI</a>; material in Part 2 which was specific to
+particular elements has been moved to the element descriptions.</p>
+</div>
+<div class="paragraph">
+<p>This Standard is maintained by the AGI Standards Committee. Any feedback
+on it should be sent
+to&#160;<a href="mailto:standards@agi.org.uk">gemini@agi.org.uk</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_introduction"><a class="anchor" href="#_introduction"></a><a class="link" href="#_introduction"><span id="Intro">#</span>#Introduction</a></h3>
+<div class="paragraph">
+<p>Geospatial data is data containing a locational element relative to the
+Earth. Many datasets that at first sight do not appear to be geospatial
+nevertheless do have a geospatial component, in that they apply to a
+limited geographic area, for example statistics for a local authority
+area. Geospatial data contains spatial references which may take the
+form of coordinates, for example in latitude and longitude, or
+references to geographic names, for example street data.</p>
+</div>
+<div class="paragraph">
+<p>Metadata is data about data. It provides additional information about a
+data resource, to enable the data resource to be better understood and
+used to good effect. There are a range of uses for metadata:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>discovery</strong>: the user aims to find out what available data resources
+are potentially able to satisfy a specified set of requirements.</p>
+</li>
+<li>
+<p><strong>evaluation</strong>: the user needs to go deeper in the metadata (e.g.
+looking at the quality information) in order to ascertain whether a
+candidate data resource is fit for the intended purpose.</p>
+</li>
+<li>
+<p><strong>use</strong>: the user has selected a candidate data resource, but needs to
+access it and to configure a system or software to process it.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are many metadata standards in existence. These have been produced
+at different times by different bodies for different purposes. The main
+one that is relevant to geospatial datasets is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ISO 19115,&#160;</strong>the International Standard which describes all aspects
+of geospatial metadata and provides a comprehensive set of metadata
+elements that are widely used as the basis for geospatial metadata
+services.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The&#160;<a href="https://inspire.ec.europa.eu/about-inspire/563">EU INSPIRE
+Directive</a>&#160;[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">7</a>]&#160;mandates
+the collection of metadata for use in Europe. Implementing Rules define
+the requirements for metadata for discovery purposes. These are based on
+ISO 19115, and
+outlined&#160;<a href="https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>The aim of UK GEMINI is to provide a core set of metadata elements for
+use in a UK geospatial metadata service, that are compatible with the
+INSPIRE requirements for metadata. It does not preclude organisations
+recording additional metadata elements for their own internal business
+purposes.</p>
+</div>
+<div class="paragraph">
+<p>In this document the term ‘data resource’ is used, in preference to
+‘dataset’. This is to allow UK GEMINI to be applied to resources in
+addition to datasets, such as services supplying data.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scope1_scope"><a class="anchor" href="#_scope1_scope"></a><a class="link" href="#_scope1_scope">[<mark>scope]</mark>#&#160;1. Scope</a></h3>
+<div class="paragraph">
+<p>This Standard specifies a set of metadata elements for describing
+geographic information resources. These resources may be datasets,
+dataset series, services delivering geographic data, or any other
+information resource with a geospatial content. This includes datasets
+that relate to a limited geographic area
+[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">1</a>].
+The data resources may be graphical or textual (tabular or free text),
+hardcopy or digital.</p>
+</div>
+<div class="paragraph">
+<p>The metadata elements are intended for use in a metadata service for
+discovering what data resources exist. The elements include the
+mandatory core set defined in ISO 19115 Geographic information –
+Metadata, and comply with
+the&#160;<a href="https://inspire.ec.europa.eu/metadata/6541">INSPIRE Implementing
+Rules for
+Metadata</a>&#160;[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">7</a>].
+In any implementation or community, it is likely that additional
+metadata elements will be included for other purposes, such as data
+management, and a method for specifying such elements is defined. The UK
+specific guidance is designed to ensure that the metadata records work
+correctly with the national
+catalogue,&#160;<a href="https://data.gov.uk/">https://data.gov.uk</a></p>
+</div>
+<div class="paragraph">
+<p>Guidance on transferring metadata records to the national catalogue are
+given
+at&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide">Operational
+Guide</a>.</p>
+</div>
+<div class="paragraph">
+<p>This Standard is applicable to data creators, data owners, data
+publishers and suppliers of metadata services. Although it is primarily
+designed for data resources held within the UK on a national basis, by
+following the principles and structures of ISO 19115, it is also
+applicable within an organisation, user community or nation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_normative_ref2_normative_references"><a class="anchor" href="#_normative_ref2_normative_references"></a><a class="link" href="#_normative_ref2_normative_references">[<mark>normative_ref]</mark>#&#160;2. Normative References</a></h3>
+<div class="paragraph">
+<p>The following referenced documents are indispensable to the application
+of this document. For dated references, only the edition cited applies.
+For undated references, the latest edition of the referenced document
+(including any amendments) applies.</p>
+</div>
+<div class="paragraph">
+<p>ISO 639-2 Codes for the representation of the names of languages –
+Alpha-3 code</p>
+</div>
+<div class="paragraph">
+<p>ISO 8601 Data elements and interchange formats – Information interchange
+– Representation of dates and times</p>
+</div>
+<div class="paragraph">
+<p>ISO 19115:2003 Geographic information – Metadata</p>
+</div>
+<div class="paragraph">
+<p>ISO 19115:2003 Cor.1:2006 Geographic information – Metadata Technical
+corrigendum 1</p>
+</div>
+<div class="paragraph">
+<p>ISO 19119:2005 Geographic information – Services</p>
+</div>
+<div class="paragraph">
+<p><a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Metadata/6541">The
+INSPIRE Metadata Technical Guidance</a>, v2.0.1, published 2017-03-02</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_terms3_terms_and_definitions"><a class="anchor" href="#_terms3_terms_and_definitions"></a><a class="link" href="#_terms3_terms_and_definitions">[<mark>terms]</mark>#&#160;3. Terms and Definitions</a></h3>
+<div class="paragraph">
+<p>See the&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1056-glossary">Glossary</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requirements4_requirements"><a class="anchor" href="#_requirements4_requirements"></a><a class="link" href="#_requirements4_requirements">[<mark>requirements]</mark>#&#160;4. Requirements</a></h3>
+<div class="sect3">
+<h4 id="_4_1_datasets_and_dataset_series"><a class="anchor" href="#_4_1_datasets_and_dataset_series"></a><a class="link" href="#_4_1_datasets_and_dataset_series"><strong><em><span id="4" class="1">#</span>#4.1 Datasets and dataset series</em></strong></a></h4>
+<div class="paragraph">
+<p>UK GEMINI specifies a set of metadata elements for use when describing
+geographic information resources.</p>
+</div>
+<div class="paragraph">
+<p>The metadata elements are listed in
+the&#160;<a href="https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0">summary
+table</a>, which shows the metadata element names, their GEMINI element id
+(consistent with element numbers in previous versions of GEMINI), the
+obligation (whether their inclusion is mandatory, optional or
+conditional, and the number of possible occurrences of the element
+(whether there may be many (N), or only one (1)), and whether the
+element is available for both data and services.</p>
+</div>
+<div class="paragraph">
+<p>Some metadata elements concern the metadata rather than the data
+resource itself. These are termed ‘metadata on metadata’. These elements
+are likely to have common values for a set of metadata records provided
+by an organisation.</p>
+</div>
+<div class="paragraph">
+<p>For metadata to conform to this Standard, it is necessary that all
+mandatory elements are provided, and that all conditional elements are
+provided when the stated condition is met. Optional elements should be
+provided where they are applicable. A checklist for conformity is
+given&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1040-checklist-for-conformity2">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_2_services"><a class="anchor" href="#_4_2_services"></a><a class="link" href="#_4_2_services">&#160;*<em><span id="4" class="2">#</span>#4.2 Services</em>*</a></h4>
+<div class="paragraph">
+<p>The INSPIRE Implementing Rules apply not only to datasets and datasets
+series, but also to (data) services. These are external applications
+(e.g. web services) that deliver data to a user or process, rather than
+complete datasets. For such services, some additional metadata elements
+are required. These additional elements are Spatial data service type
+and Coupled resource.</p>
+</div>
+<div class="paragraph">
+<p>Note that services are not described in ISO 19115, but in ISO 19119
+(with an associated amendment). This results in a slight inconsistency
+of approach regarding the way that metadata is recorded for services.
+Some of the other metadata elements may not apply to particular types of
+service. The UK GEMINI metadata elements for services are identified in
+the&#160;<a href="https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0">summary
+table</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_3_element_details"><a class="anchor" href="#_4_3_element_details"></a><a class="link" href="#_4_3_element_details"><strong><em><span id="4" class="3">#</span>#4.3 Element details</em></strong></a></h4>
+<div class="paragraph">
+<p>Details of the metadata elements are given in :</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series">GEMINI
+- Datasets and dataset series</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services">GEMINI -
+Services</a></p>
+</div>
+<div class="paragraph">
+<p>Each element listed&#160;separately, with the following information:</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Metadata element name*&#160;– the name of the UK GEMINI element;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*UK GEMINI id&#160;*– the identifier of the UK GEMINI element; note: these
+do not change between versions of GEMINI; ids of deleted elements are
+not re-used.</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Definition*&#160;– the formal definition of the element;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Purpose and meaning*&#160;- an explanation of what the element is, and why
+it is required</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Obligation*&#160;– whether the element is mandatory, optional or
+conditional (where the element must be supplied when stated conditions
+apply);</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Occurrence*&#160;– whether the element is single-valued or can have
+multiple values;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Data type*&#160;– the form of the entry, whether it is a character string
+(CharacterString), real number (real), integer, code or other class.
+Where the data type is another class, it is described as a set of
+sub-elements. Examples are Distributor and Vertical extent;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Domain*&#160;– the allowable set of values;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Guidance*&#160;– advice on how to complete the entry
+[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">2</a>];</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Comment*&#160;– other other information of relevance;</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Examples*</p>
+</div>
+<div class="paragraph">
+<p>-<strong>&#160;Corresponding element in&#160;</strong>INSPIRE Metadata, ISO 19115:2003, ISO
+19139:2007</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Change history*&#160;– how the element has changed from v1.0 of the
+Standard;</p>
+</div>
+<div class="paragraph">
+<p>-<strong>&#160;Encoding guidelines &amp; example</strong>&#160;- how to create an XML instance of
+this element</p>
+</div>
+<div class="paragraph">
+<p>-&#160;*Errors observed*&#160;- observations on errors noted with each element</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extended5_extended_metadata"><a class="anchor" href="#_extended5_extended_metadata"></a><a class="link" href="#_extended5_extended_metadata">[<mark>extended]</mark>#&#160;5. Extended metadata</a></h3>
+<div class="sect3">
+<h4 id="_5_1_additional_metadata_elements"><a class="anchor" href="#_5_1_additional_metadata_elements"></a><a class="link" href="#_5_1_additional_metadata_elements"><strong><em><span id="5" class="1">#</span>#5.1 Additional metadata elements</em></strong></a></h4>
+<div class="paragraph">
+<p>In many organisations, there is a need to record additional items of
+metadata to meet specific local requirements. This may be to incorporate
+particular characteristics of the data resources, or for particular
+applications. Additional metadata elements may be included in a metadata
+implementation. These elements should be taken from ISO 19115
+[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">18</a>],
+which includes a comprehensive collection of metadata elements for
+geographic information, and also allows for further extensions.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_2_extension_of_code_lists"><a class="anchor" href="#_5_2_extension_of_code_lists"></a><a class="link" href="#_5_2_extension_of_code_lists"><strong><em><span id="5" class="2">#</span>#5.2 Extension of code lists</em></strong></a></h4>
+<div class="paragraph">
+<p>Several metadata elements specified in UK GEMINI use enumerated code
+lists. These are pre-defined sets of values identified by codes. They
+are useful to standardise the entries to aid searches of metadata for
+specified values. The code lists included in UK GEMINI are taken from
+ISO 19115. In some cases, the explanations of the values have been
+modified to make them more appropriate to the UK context.</p>
+</div>
+<div class="paragraph">
+<p>Some of these code lists will require extension. Additional codes may be
+created as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>identify the new value, which should be distinct from existing values;</p>
+</li>
+<li>
+<p>choose a name that encapsulates the essential concept;</p>
+</li>
+<li>
+<p>provide a definition that is understandable and concise;</p>
+</li>
+<li>
+<p>chose a new code that has not been used before for this element;</p>
+</li>
+<li>
+<p>document the new codes, and disseminate them to users.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Such code extensions may be either specific to a metadata implementation
+in an organisation or sector, or for general usage. In the latter case,
+proposed new codes should be
+submitted&#160;to&#160;<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>&#160;for
+inclusion in the next version of UK GEMINI. It is expected that future
+editions of UK GEMINI will incorporate such modified code lists.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note that any new code values cannot be used in a national metadata
+service until incorporated in the Standard, nor will they be valid for
+the purposes of INSPIRE.</strong></p>
+</div>
+<div class="paragraph">
+<p><em>Last updated: May 2018</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-11-07 16:59:10 UTC
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+    <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
+<div class="x-bg" aria-hidden="true">
+<div class="x-bg-layer-lower-image" style=" background-image: url(https://www.agi.org.uk/wp-content/uploads/2020/07/pronto-bg.png); background-repeat: repeat; background-position: center; background-size: 150px;">
+</div>
+<div class="x-bg-layer-upper-color" style=" background-color: #0099bb;">
+</div>
+</div>
+<div class="e1248-1 x-bar-content">
+<div class="x-bar-container e1248-2 myo-3 myo-4 myo-5">
+<a class="x-anchor x-anchor-button has-graphic e1248-3 myo-9 myo-a myo-b" tabindex="0" href="https://twitter.com/geocommunity/" target="_blank">
+<div class="x-anchor-content">
+<span class="x-graphic" aria-hidden="true">
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-primary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf099;">
+</i>
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-secondary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf099;">
+</i>
+</span>
+</div>
+</a>
+<a class="x-anchor x-anchor-button has-graphic e1248-4 myo-9 myo-a myo-b" tabindex="0" href="https://vimeo.com/geocommunity" target="_blank">
+<div class="x-anchor-content">
+<span class="x-graphic" aria-hidden="true">
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-primary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf27d;">
+</i>
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-secondary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf27d;">
+</i>
+</span>
+</div>
+</a>
+<a class="x-anchor x-anchor-button has-graphic e1248-5 myo-9 myo-a myo-b" tabindex="0" href="https://www.linkedin.com/company/2892612/" target="_blank">
+<div class="x-anchor-content">
+<span class="x-graphic" aria-hidden="true">
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-primary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf0e1;">
+</i>
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-secondary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf0e1;">
+</i>
+</span>
+</div>
+</a>
+<a class="x-anchor x-anchor-button has-graphic e1248-6 myo-9 myo-a myo-b" tabindex="0" href="https://www.flickr.com/people/104116295@N06/" target="_blank">
+<div class="x-anchor-content">
+<span class="x-graphic" aria-hidden="true">
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-primary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf16e;">
+</i>
+<i class="x-icon x-graphic-child x-graphic-icon x-graphic-secondary x-flip-x" aria-hidden="true" data-x-icon-b="&#xf16e;">
+</i>
+</span>
+</div>
+</a>
+</div>
+<div class="x-bar-container e1248-7 myo-3 myo-6 myo-7">
+<ul class="x-menu-first-level x-menu x-menu-inline e1248-8 myo-f myo-g">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1746" id="menu-item-1746">
+<a class="x-anchor x-anchor-menu-item myo-a myo-b myo-c myo-d" tabindex="0" href="https://www.agi.org.uk/privacy-policy/">
+<div class="x-anchor-content">
+<div class="x-anchor-text">
+<span class="x-anchor-text-primary">
+Privacy Policy</span>
+</div>
+<i class="x-anchor-sub-indicator" data-x-skip-scroll="true" aria-hidden="true" data-x-icon-s="&#xf107;">
+</i>
+</div>
+</a>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1251" id="menu-item-1251">
+<a class="x-anchor x-anchor-menu-item myo-a myo-b myo-c myo-d" tabindex="0" href="https://www.agi.org.uk/website-terms-and-conditions/">
+<div class="x-anchor-content">
+<div class="x-anchor-text">
+<span class="x-anchor-text-primary">
+Website Terms and Conditions</span>
+</div>
+<i class="x-anchor-sub-indicator" data-x-skip-scroll="true" aria-hidden="true" data-x-icon-s="&#xf107;">
+</i>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-9 myo-1 myo-2" data-x-bar="{&quot;id&quot;:&quot;e1248-9&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;49px&quot;}">
+<div class="x-bg" aria-hidden="true">
+<div class="x-bg-layer-lower-image" style=" background-image: url(https://www.agi.org.uk/wp-content/uploads/2020/07/pronto-bg.png); background-repeat: repeat; background-position: center; background-size: 150px;">
+</div>
+<div class="x-bg-layer-upper-color" style=" background-color: #0099bb;">
+</div>
+</div>
+<div class="e1248-9 x-bar-content">
+<div class="x-bar-container e1248-10 myo-3 myo-4 myo-7 myo-8">
+<div class="x-text e1248-11 myo-h">
+Copyright © AGI.  All rights reserved</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

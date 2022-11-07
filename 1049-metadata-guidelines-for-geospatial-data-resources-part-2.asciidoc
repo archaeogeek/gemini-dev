@@ -1,0 +1,422 @@
+== Metadata Guidelines for Geospatial Data Resources Part 2
+
+include::./includes/attributes.asciidoc[]
+
+=== Creating metadata using UK GEMINI (v2.3) May 2018 -{nbsp}_being revised_
+
+Return
+to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+2.3 home page]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#Intro[1.
+Introduction]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#gemini[2.
+GEMINI2]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.1[2.1
+Metadata elements]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.2[2.2
+Additional metadata elements]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.3[2.3
+Extension code lists]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#errors[3.
+Possible metadata errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.1[3.1
+Impact of metadata errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.2[3.2
+Effect on searches]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.3[3.3
+Prevention and correction of errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.4[3.4
+Common errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#guidance[4.
+Guidance for individual metadata elements]
+
+=== Preface
+
+This is the second part of a set of guidelines for metadata for
+geospatial data resources. These metadata guidelines are primarily
+concerned with geospatial data (i.e. that which references data to a
+location on the surface of the Earth), and which has a limited
+geographic extent (i.e. is restricted to a defined territory). The
+guidelines have been developed within the context of a UK Location
+Discovery metadata service meeting the requirements of the EU INSPIRE
+Directive and the UK GEMINI2 metadata standard. However, they are
+sufficiently broadly based to be applicable in a wider context of
+geospatial metadata creation and management.
+
+The Guidelines are aimed at data managers and creators of metadata,
+providers of metadata services and general data users. They include
+guidance on quality management such that they could be used in the
+context of a national metadata service.
+
+https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[Part
+1 of the Guidelines{nbsp}]covers the basics of metadata and provides an
+introduction to the other two parts. It includes a glossary of terms and
+set of references. Part 3
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[3]]
+deals with metadata quality and covers quality evaluation and quality
+management of metadata including guidance on establishing acceptable
+quality levels. This Part of the Guidelines provides a set of detailed
+guidelines for UK GEMINI2 metadata elements. It has been revised to
+correspond to version 2.3 of UK GEMINI.
+
+Any comments on these guidelines or on the UK GEMINI2 metadata standard
+should be sent
+to{nbsp}gemini@agi.org.uk.
+
+=== [#intro]##{nbsp}1. Introduction
+
+UK GEMINI2 defines a core set of metadata elements for discovery of data
+resources and other essential purposes. It provides details of what
+metadata should be collected for geospatial data resources and is
+designed for use in a geospatial discovery metadata service. The data
+resources may be datasets, dataset series, services delivering
+geographic data, or any other information resource with a geospatial
+content. This includes datasets that relate to a limited geographic
+area. The data resources may be graphical or textual (tabular or free
+text), hardcopy or digital.
+
+This part of the{nbsp}_Metadata Guidelines for Geospatial Data
+Resources_{nbsp}provides detailed guidance for the application of UK GEMINI2.
+It is aimed at those creating metadata conforming to UK GEMINI2. This
+expands on existing guidance given in the UK GEMINI2
+specification[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[4]].
+It also describes possible errors that might occur in such metadata and
+suggests actions to guard against them. It explains how to expand the
+metadata elements in addition to those in UK GEMINI2 if required, and
+how to extend code lists of allowable values.
+
+This Part should be read in conjunction with the other parts of these
+guidelines.
+
+=== [#gemini]##{nbsp}2. GEMINI2
+
+==== *_[#2.1]####2.1 Metadata elements_*
+
+UK GEMINI2 specifies a set of metadata elements for describing
+geospatial data resources. These resources may be a dataset, data set
+series (collection of datasets with a common specification) or data
+service. The type of resource is identified in the element Resource Type
+(39). The metadata elements are summarised
+in{nbsp}https://www.agi.org.uk/gemini/40-gemini/1250-element-summary[element
+summary].
+
+Detailed guidance on how to create each of these elements can be found
+here:
+
+https://www.agi.org.uk/gemini/40-gemini/1027-citizens-as-sensors-a-solution-to-pollution[GEMINI
+- Datasets and data series]
+
+GEMINI - Services
+
+==== *_[#2.2]####2.2 Additional metadata elements_*
+
+In many organisations, there is a need to record additional items of
+metadata to meet specific local requirements. This may be to incorporate
+particular characteristics of the data resources, or for particular
+applications. Additional metadata elements may be included in a metadata
+implementation. These elements should be taken from ISO
+19115{nbsp}_Geographic information -
+Metadata{nbsp}_[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[18]],
+which includes a comprehensive collection of metadata elements for
+geographic information. An example would be Dataset character set and
+Metadata character set where non-standard characters are used.
+
+==== *_[#2.3]####2.3 Extension of code lists_*
+
+Several of the metadata elements specified in UK GEMINI2 use enumerated
+code lists. These are pre-defined sets of values identified by codes.
+They are useful to standardise the entries to aid searches of metadata
+for specified values. The code lists included in UK GEMINI2 are taken
+from ISO 19115. In some cases, the explanations of the values have been
+modified to make them more appropriate to the UK context.
+
+Some of these code lists will require extension. Additional codes may be
+created as follows:
+
+. Identify the new value, which should be distinct from existing values;
+. Choose a name that encapsulates the essential concept;
+. Provide a definition that is understandable and concise;
+. Choose a new code that has not been used before for this element;
+. Document the new codes, and disseminate them to users.
+
+Such code extensions may be either specific to a metadata implementation
+in an organisation or sector, or for general usage. In the latter case,
+proposed new codes should be submitted
+(to{nbsp}mailto:standards@agi.org[gemini@agi.org.uk)
+for inclusion in the next version of UK GEMINI2. It is expected that
+future editions of UK GEMINI will incorporate such modified code lists.
+
+*Note that any new code values cannot be used in a national metadata
+service until incorporated in the Standard, neither will they be valid
+for the purposes of INSPIRE.*
+
+=== [#errors]##{nbsp}3. Possible metadata errors
+
+==== *_[#3.1]####3.1 Impact of metadata errors_*
+
+Errors having the greatest impact are likely to be those that affect
+searches based on:
+
+* *Where?*{nbsp}- geographical extent expressed in latitude and longitude or
+some named standard area (e.g. administrative area, postcode, country);
+* *What?*{nbsp}- theme, subject or topic;
+* *When?*{nbsp}- date when data resource was current.
+
+Errors in the metadata elements used by these searches will result in
+over- or under-selection of data resources and will degrade the quality
+of the discovery service that is providing the search facility.
+Inconsistencies in the capture or updating of metadata, such as the
+categorisation of data subject or topic, will further erode the quality
+of the discovery service.
+
+==== *_[#3.2]####3.2 Effect on searches_*
+
+Having discovered a number of candidate data resources, the discovery
+service user then assesses the likelihood that any of these meet their
+requirements. They will need the information in the other metadata
+elements such as abstract, lineage, data format, and constraints to make
+their assessment. Inaccuracies, inconsistencies, or incompleteness will
+detract from the quality of the discovery service.
+
+Information also needs to be topical or up-to-date. Discovery services
+are bedevilled by metadata containing information current at the
+inception of the service but never maintained since. The service user
+needs to have reliable information about where they can find out more
+about the data resource and how they can obtain that resource. It is not
+uncommon for this to be out-of-date or have incorrect URLs or contact
+details.
+
+==== *_[#3.3]####3.3 Prevention and correction of errors_*
+
+Prevention and correction of these errors is usually a combination of:
+
+* Understanding the nature of the errors;
+* Clear guidance on avoidance of errors at time of entry – metadata
+capture tools may help here in validating entries;
+* Staff trained in metadata capture who understand the nature of the
+data resources being documented;
+* Independent quality control with specified quality evaluation
+procedures, acceptable quality levels and procedures for dealing with
+metadata that fails;
+* Periodic reviews of existing metadata to check that all information is
+current;
+* Procedures for dealing with errors reported by service providers or
+users;
+* Overall quality assurance process which reviews procedures in the
+light of experience and aims to improve overall metadata quality.
+
+Further guidance on how to prevent and correct errors is given in Part 3
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[3]]{nbsp}of
+these Guidelines.
+
+==== *_[#3.4]####3.4 Common errors_*
+
+Some common errors that lead to inconsistent results when searching
+across metadatasets are:
+
+* Documentation is too general;
+* Extent is over-generalised;
+* Subjects and topic categories are under-reported;
+* Incorrect or inconsistent date entries;
+* Different names are used for the same item in different places;
+* Missing values;
+* Data is not current.
+
+The nature and impact of these types of error are described in more
+detail below, together with suggested ways in which these errors can be
+prevented or corrected.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|*Type of error* |*Description and impact* |*Examples of errors*
+|*Prevention or correction*
+|Documentation too general |There are no absolute rules about how data
+resources should be “chunked” and individually documented. A metadata
+record can therefore refer to a dataset covering a single topic relating
+to a small area or major dataset series covering all or parts of UK
+containing many topics. This can lead to inconsistent search results
+with either over- or under-selection of data resources. a|
+. Topographic mapping covering whole of GB at different scales to
+different specifications documented using one metadata record.
+. Reports produced by an organisation relating to a variety of locations
+and dates documented using one metadata record.
+
+a|
+Have clear guidance on the “chunking” of data resources for individual
+documentation[See{nbsp}https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[Part
+1 of these Guidelines]] based on:
+
+. how the data is used (stand-alone or as part of wider set);
+. continuity and extent of coverage;
+. date of capture or maintenance;
+. topics or subjects covered, and
+. uniformity of specification within data resource.
+
+Introduce checks to ensure consistency of approach across all metadata.
+
+|Extent over-generalised |This particularly applies when extent is
+described in terms of standard geographical areas such as postcode
+districts, counties, or countries. Inconsistencies in relating data
+resource coverage to these areas and the use of different extent names
+to refer to the same coverage results in either over- or under-selection
+of data resources. a|
+. Coverage given as UK or GB when restricted to England.
+. Coverage of UK referred to as GB.
+. Coverage given as England when restricted to Hampshire only.
+
+a|
+Have clear rules and user guidance on the relating of named extents to
+the coverage of data resources and guidelines on the types of extents to
+be used. Where named extents form part of a nesting hierarchy (e.g.
+administrative areas) then any guidance should cover the possible need
+for inclusion of levels in the hierarchy.
+
+Introduce checks to ensure consistency of approach across all metadata.
+
+|Subjects and topic categories under-reported |This particularly applies
+where there are enumerated lists of topics. Inconsistency in the
+inclusion of individual topics can lead to over- or under-selection of
+data resources. |Metadata for topographic map series does not include
+boundaries, elevation, inland waters, structure, and transportation as
+topics. a|
+Use guidance on the recording of topics or themes to promote
+consistency.
+
+Use closed lists wherever possible and discourage the use of free text.
+
+Introduce checks to ensure consistency of approach across all metadata.
+
+|Incorrect or inconsistent date entries a|
+There is often confusion between the date that the data was current, the
+date when the data was captured or last updated and the date when the
+data resource was released, published or made available.
+
+There can be further inconsistencies between the frequency of update and
+the recorded currency of the data resource. This can lead to {nbsp} false
+returns for searches based on dates.
+
+a|
+. Date of capture of data resource later than date of publication.
+. Update reported as continuous but date of last update reported as 10
+years ago.
+
+a|
+Use guidance on the recording of different dates to promote consistency.
+
+Introduce checks, preferably by software, to ensure that the ordering of
+dates is consistent.
+
+|Same item, different name |This is particularly relevant where there is
+no closed list but a name or descriptor recurs which is common to many
+metadatasets. This may lead to inconsistent results or, more frequently
+misinterpretation of results. |National Grid, British National Grid,
+National Grid of Great Britain. a|
+Include frequently used standard names in any internal guidance.
+
+Introduce checks to ensure consistency of approach across all metadata.
+
+|Missing values |Omission of values relating to extent, date or topic
+will have great impact on searches since these are the usual criteria
+used. a|
+. Omission of geographical extent.
+. Omission of dataset reference date.
+. Missing topic categories.
+
+|Introduce checks, preferably software checks, to ensure that mandatory
+fields contain values.
+
+|Information not current |This can impact both on searches and the
+interpretation of search results since the metadata does not reflect the
+current information or only does so partially. a|
+. Content of data resource extended but no change to topic categories.
+. Abstract not updated to reflect change of specification.
+. Data resource updated but later date not entered in the metadata.
+
+|Introduce a regime of regular checks on all metadata to ensure that
+currency is assessed and updates made where needed.
+|===
+
+Other errors that may lead to misinterpretation of results are:
+
+* Correct value, but for the wrong metadata element;
+* Values incorrect, incomplete or inaccurate;
+* Incomprehensible, misleading or uninformative entries.
+
+The nature and impact of these types of error are described in more
+detail below, together with suggested ways in which these errors can be
+prevented or corrected.
+
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Type of error* |*Description and impact* |*Examples of errors*
+|*Prevention or correction*
+
+|Correct value, wrong metadata element |Confusion between the
+definitions of metadata elements can lead to correct values entered
+against the wrong metadata element. a|
+. Lineage information given for abstract.
+. Limitations on public access given for use constraints.
+
+a|
+Use guidance on the definition and use of the metadata elements
+especially those most commonly confused (see examples).
+
+Introduce training and checks to ensure correct use of elements.
+
+|Values incorrect, incomplete or inaccurate |This can apply to both
+quantitative and non-quantitative entries and can impact on the way that
+results are interpreted and used. a|
+. URL given as additional information source incorrect and not
+accessible.
+. Contact details for obtaining data resource are incorrect.
+
+|Check values are correct as far as can be established e.g.
+independently check URLs, contact details.
+
+|Incomprehensible, misleading or uninformative{nbsp} entries |Entries need to
+be understandable by the discovery service user who needs to interpret
+the search results. The impact can be that results are misinterpreted
+and candidate datasets ignored. a|
+. Where dataset does not have a recognised title, uninformative title
+given.
+. Abstract is uninformative with no information on content.
+. Lineage contains no information about sources or reasons for creation.
+. Use of terms and abbreviations unlikely to be understood by service
+user.
+
+|Use guidance and checklists for compiling entries e.g. abstracts.
+|===
+
+=== [#guidance]####4. Guidance for individual metadata elements
+
+Detailed guidance on how to create each of these elements can be found
+here:
+
+https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/[GEMINI
+- Datasets and data series]
+
+https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services/[GEMINI -
+Services]
+
+Each metadata element is listed{nbsp}separately, as described
+in{nbsp}https://www.agi.org.uk/gemini/40-gemini/1244-uk-gemini-introduction#4.3[UK
+GEMINI Introduction].
+
+_Last updated: May 2018_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]
