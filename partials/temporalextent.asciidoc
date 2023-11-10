@@ -10,13 +10,13 @@ include::includes/partials-attributes.adoc[]
 |Purpose and meaning |This is the date or date range that identifies the
 currency of the data. It may refer to the period of collection, or the
 date at which it is deemed to be current.
-# tag::dataset[]
+ifdef::variant-dataset[]
 |Obligation |Mandatory for datasets and dataset series
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 |Obligation |Conditional for services - where a temporal extent is
 relevant to the service
-# end::service[]
+endif::[]
 |Occurrence |Multiple
 
 |Data type |Date
@@ -72,14 +72,14 @@ optional if another temporal reference is provided.
 |ISO 19115:2003 |EX_Extent > EX_TemporalExtent.extent |Identical
 
 |ISO 19139:2007
-# tag::dataset[]
+ifdef::variant-dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement
 |Identical
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:temporalElement
 |Identical
-# end::service[]  
+endif::[]  
 |===
 ====
 
@@ -161,7 +161,7 @@ before the specified date
 * 'after': in which case the actual date is unknown but known to be
 after the specified date
 . Example Four shows encoding examples using these values.
-# tag::dataset[]
+ifdef::variant-dataset[]
 | Example One (datasets/series) : (gml:TimePeriod)
 |
 [source,xml]
@@ -186,8 +186,8 @@ include::../snippets/temporalextent-unknowndates.xml[]
 ----
 include::../snippets/temporalextent-other.xml[]
 ----
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 | Example One (services) : (gml:TimePeriod)
 |
 [source,xml]
@@ -212,7 +212,7 @@ include::../snippets/temporalextent-unknowndates.xml[]
 ----
 include::../snippets/temporalextent-other.xml[]
 ----
-# end::service[]
+endif::[]
 |===
 ====
 

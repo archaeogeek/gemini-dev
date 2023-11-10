@@ -122,18 +122,18 @@ acting as distributor, publisher, author, etc. !distributor
 
 |ISO 19115:2003 |MD_Identification.pointOfContact |Similar high-level
 class
-# tag::dataset[]
+ifdef::variant-dataset[]
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
 |Equivalent
 |===
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
 |Equivalent
 |===
-# end::service[]
+endif::[]
 ====
 
 .Change history...
@@ -160,22 +160,22 @@ more fully populated example.
 . Note on role code: the UK Location portal (data.gov.uk site)
 interprets ISO 'owner' as Data Provider, and ISO 'publisher' as Data
 Publisher.
-# tag::dataset[]
+ifdef::variant-dataset[]
 | Example One (datasets/series)
 |
 [source,xml]
 ----
 include::../snippets/dataset-responsibleorganisation.xml[]
 ----
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 | Example One (service)
 |
 [source,xml]
 ----
 include::../snippets/service-responsibleorganisation.xml[]
 ----
-# end::service[]
+endif::[]
 |===
 ====
 

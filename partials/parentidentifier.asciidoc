@@ -22,12 +22,12 @@ forms a part.
 |Domain |free text
 
 |Guidance | 
-# tag::dataset[]
+ifdef::variant-dataset[]
 Only to be used if the dataset is part of a series
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 Only to be used if the service is designed to be part of a set of services
-# end::service[]
+endif::[]
 
 |Comment |
 

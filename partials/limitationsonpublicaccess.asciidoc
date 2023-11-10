@@ -64,14 +64,14 @@ types of usage, or constraints on the use that can be made of the data.
 MD_LegalConstraints.accessConstraints & otherConstraints |Equivalent
 
 |ISO 19139:2007
-# tag::dataset[]
+ifdef::variant-dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
 & otherConstraints |Equivalent
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
 & otherConstraints |Equivalent
-# end::service[]
+endif::[]
 |===
 ====
 
@@ -115,12 +115,12 @@ gmd:otherConstraints element
 |
 [source,xml]
 ----
-# tag::dataset[]
+ifdef::variant-dataset[]
 include::../snippets/dataset-limitationsonpublicaccess.xml[]
-# end::dataset[]
-# tag::service[]
+endif::[]
+ifdef::variant-service[]
 include::../snippets/service-limitationsonpublicaccess.xml[]
-# end::service[]
+endif::[]
 ----
 | Example Two - no limitations
 |

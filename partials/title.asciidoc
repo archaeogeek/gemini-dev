@@ -68,22 +68,22 @@ No error information available
 |===
 |Guidelines |Cannot be empty
 |Example
-# tag::dataset[]
+ifdef::variant-dataset[]
 [#dataset]
 |
 [source,xml]
 ----
 include::../snippets/dataset-title.xml[]  
 ----
-# end::dataset[] 
-# tag::service[]               
+endif::[] 
+ifdef::variant-service[]               
 [#service]
 |
 [source,xml]
 ----
 include::../snippets/service-title.xml[] 
 ----
-# end::service[]  
+endif::[]  
 |===
 ====
 
