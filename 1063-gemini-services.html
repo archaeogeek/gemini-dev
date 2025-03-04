@@ -3261,7 +3261,7 @@ controlled vocabulary</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two (services) - service keyword from part D4 on the INSPIRE Metadata Implementing Rules</p>
+<p>Example Two (services) - service keyword from part D4 of the INSPIRE Metadata Implementing Rules</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -3410,6 +3410,32 @@ controlled vocabulary</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example Five (services) - keywords in the srv namespace (this encoding is not to be used)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;srv:keywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>humanCatalogueViewer<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:keywords&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
@@ -3999,9 +4025,9 @@ should be reported for spatial datasets</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><ul><li><span class="primary">The encoding for dataset reference date is shown in Example One.</span></li><li><span class="primary">Dates may be expressed with low precision, as shown in the example.
 GEMINI2 also allows the date and time to be published in metadata. In
 this case the date encoding shown in Example Two must be used.</span></li><li><span class="primary">The format of date and date-time values is described at
-<a href="component/content/article?id=1048#2.2.3">Dates and Times</a></span></li><li><span class="primary">Dataset reference date shall include a date type. The content of this
+<a href="1048-uk-gemini-encoding-guidance.html#_dates_and_times">Dates and Times</a></span></li><li><span class="primary">Dataset reference date shall include a date type. The content of this
 XML element is drawn from a
-<a href="component/content/article?id=1048#2.2.9">code list</a>.</span></li></ul></div></td>
+<a href="1048-uk-gemini-encoding-guidance.html#_code_lists">code list</a>.</span></li></ul></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -4501,7 +4527,7 @@ specified coordinate reference system</p>
 for the vertical extent measurements. This should be recorded as a name
 or as a code, for example as provided in the EPSG Geodetic Parameter
 Registry produced by The International Association of Oil &amp; Gas
-Producers (see <a href="http://www.epsg-registry.org/" class="bare">http://www.epsg-registry.org/</a>)</p>
+Producers (see <a href="https://epsg.org/" class="bare">https://epsg.org/</a>)</p>
 </li>
 </ol>
 </div></div></td>
@@ -4517,7 +4543,7 @@ significant, e.g. in geology, mining, meteorology etc.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">March 2019</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2024</p></td>
 </tr>
 </tbody>
 </table>
@@ -4611,7 +4637,7 @@ the zero reference) and the units of the coordinate values.</p>
 (Example One) or by value (Example Two). These examples express the same
 information: that the vertical extent coordinates are referenced to
 Ordnance Datum (Newlyn). Codes and GML CRS data are from the
-<a href="http://www.epsg-registry.org/">EPSG Registry</a>.</p>
+<a href="https://epsg.org/">EPSG Registry</a>.</p>
 </li>
 <li>
 <p>Additionally, the gco:nilReason attribute can be used if the vertical
@@ -4632,7 +4658,7 @@ instance altogether.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-323232&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_DataIdentification&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
@@ -4651,7 +4677,7 @@ instance altogether.</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -4667,7 +4693,7 @@ instance altogether.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:dataIdentification&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-234567&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_DataIdentification&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
@@ -4717,7 +4743,7 @@ instance altogether.</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:dataIdentification&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -5307,7 +5333,7 @@ included, for best results with data.gov.uk:</p>
 <li>
 <p>In relation to online INSPIRE network services, special guidance
 applies (see
-<a href="component/content/article?id=1054#data_servce_linking">'Data and
+<a href="1054-operational-guide.html#_3_1_3_data_and_service_linking">'Data and
 Service Linking'</a>).</p>
 <ul><li><span class="primary">Identify whether the resource may be accessed.</span></li><li><span class="primary">Determine the location of the resource (may be a URL).</span></li></ul>
 </li>
@@ -5881,6 +5907,9 @@ for each.</p>
 <p>If the data was created by someone other than the Data Provider, this
 should also be recorded, using the role value 'Originator'.</p>
 </li>
+<li>
+<p>If you need to identify an individual by name, use CI_ResponsibleParty.individualName.</p>
+</li>
 </ol>
 </div></div></td>
 </tr>
@@ -5949,7 +5978,7 @@ acting as distributor, publisher, author, etc.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 2009</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2024</p></td>
 </tr>
 </tbody>
 </table>
@@ -6154,13 +6183,25 @@ stated.</p>
 <li>
 <p>INSPIRE recognises the following kinds of reasons for limiting public
 access, listed in Article 13(1):</p>
-<ul><li><span class="primary">(a) confidentiality of the proceedings of public authorities</span></li><li><span class="primary">(b) international relations, public security or national defence</span></li><li><span class="primary">(c) the course of justice</span></li><li><span class="primary">(d) confidentiality of commercial or industrial information</span></li><li><span class="primary">(e) intellectual property rights</span></li><li><span class="primary">(f) confidentiality of personal data</span></li><li><span class="primary">(g) interests of a person who supplied the data on a voluntary basis</span></li><li><span class="primary">(h) protection of the environment</span><div class="paragraph">
+<ul><li><span class="primary">(a) confidentiality of the proceedings of public authorities<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(d) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(b) international relations, public security or national defence<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(a) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(c) the course of justice<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(b) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(d) confidentiality of commercial or industrial information<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(e) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(e) intellectual property rights<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(c) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(f) confidentiality of personal data<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(2) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(g) interests of a person who supplied the data on a voluntary basis<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(f) of the UK INSPIRE Regulations 2009</a></span></li><li><span class="primary">(h) protection of the environment<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(g) of the UK INSPIRE Regulations 2009</a></span><div class="paragraph">
 <p>Each has an entry with the full text, in the INSPIRE registry,
 <a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a></p>
 </div></li></ul>
 </li>
 <li>
-<p>At least one limitation on public access shall give an INSPIRE reason</p>
+<p>At least one limitation on public access shall give an INSPIRE reason.</p>
+</li>
+<li>
+<p>If there is no applicable limitation listed in Article 13, then the closest limitation shall be chosen, and
+a second limitations on public access element should be used to provide further information.</p>
 </li>
 </ol>
 </div></div></td>
@@ -6177,7 +6218,7 @@ types of usage, or constraints on the use that can be made of the data.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">June 2021</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">October 2024</p></td>
 </tr>
 </tbody>
 </table>
@@ -6421,7 +6462,7 @@ resource</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to describe any
-restrictions on usage of the data (as opposed to access)</p></td>
+restrictions on usage of the data resource (as opposed to access)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -6553,7 +6594,7 @@ recommends using Limitations on public access for these</p>
 with code list value "otherRestrictions"</p>
 </li>
 <li>
-<p>The LegalConstraints element shall also contain a gmd:otherConstraints
+<p>The MD_LegalConstraints element shall also contain a gmd:otherConstraints
 element, with free text.</p>
 </li>
 <li>
@@ -7812,7 +7853,8 @@ extent on a global basis. The bounding box is implicitly in WGS84.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The bounding box will often cover areas that are not directly
-related to the area covered by the resource.</p></td>
+related to the area covered by the resource.
+The bounding box of a service may be larger or smaller than that of the datasets it can return.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -8166,12 +8208,16 @@ provided for any record that is not describing a dataset.</p>
 <div class="paragraph">
 <p>Go to <a href="#top">top of page</a></p>
 </div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-07-31 11:17:38 UTC
+Last updated 2025-03-04 16:40:43 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
